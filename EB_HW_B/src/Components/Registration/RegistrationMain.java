@@ -80,7 +80,7 @@ public class RegistrationMain {
 			}
 		}
 	    try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Owner\\Documents\\명지대학교\\2023년\\2학기\\클라이언트서버프로그래밍\\clientserver-eventbus-registration-project-\\EB_HW_B\\src\\Students.txt"))) {
-	        writer.write(studentFile);
+	        writer.write(studentFile); // 싱크방식 기다려주는게 아님
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }
